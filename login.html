@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | DriveSlot</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🚘</span> DriveSlot
+            </a>
+            <a href="index.html" class="btn btn-secondary">Back to Home</a>
+        </nav>
+    </header>
+
+    <main class="status-section section-container">
+        <div class="section-heading">
+            <span class="section-tag">WELCOME BACK</span>
+            <h2>Login to DriveSlot</h2>
+            <p>Access your appointments and manage your driving test bookings.</p>
+        </div>
+
+        <form class="status-form" id="login-form">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" required>
+
+            <label for="password" style="margin-top:20px">Password</label>
+            <input type="password" id="password" name="password"
+                   placeholder="Enter your password" required>
+
+            <button type="submit" class="btn btn-primary"
+                    style="width:100%;margin-top:25px">
+                Login
+            </button>
+
+            <p class="form-note">
+                Don't have an account?
+                <a href="register.html">Create an account</a>
+            </p>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="section-container">
+            <p>DriveSlot — Academic Demonstration Project</p>
+        </div>
+    </footer>
+</body>
+</html>

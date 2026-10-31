@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Test Slot | DriveSlot</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🚘</span> DriveSlot
+            </a>
+            <a href="login.html" class="btn btn-secondary">Login</a>
+        </nav>
+    </header>
+
+    <main class="status-section section-container">
+        <div class="section-heading">
+            <span class="section-tag">APPOINTMENT BOOKING</span>
+            <h2>Book Your Driving Test</h2>
+            <p>Complete the form to request a test appointment.</p>
+        </div>
+
+        <form class="status-form" id="booking-form">
+            <label for="applicant-name">Applicant Name</label>
+            <input type="text" id="applicant-name" name="name"
+                   placeholder="Enter your full name" required>
+
+            <label for="app-number" style="margin-top:16px">
+                Application Number
+            </label>
+            <input type="text" id="app-number" name="application"
+                   placeholder="Enter application number" required>
+
+            <label for="test-centre" style="margin-top:16px">
+                Testing Centre
+            </label>
+            <select id="test-centre" name="centre" required>
+                <option value="">Select testing centre</option>
+                <option value="centre-1">Testing Centre 1 — Demo</option>
+                <option value="centre-2">Testing Centre 2 — Demo</option>
+                <option value="centre-3">Testing Centre 3 — Demo</option>
+            </select>
+
+            <label for="test-vehicle" style="margin-top:16px">
+                Vehicle Category
+            </label>
+            <select id="test-vehicle" name="vehicle" required>
+                <option value="">Select vehicle category</option>
+                <option value="two-wheeler">Two-Wheeler</option>
+                <option value="lmv">Light Motor Vehicle (LMV)</option>
+                <option value="transport">Transport Vehicle</option>
+            </select>
+
+            <label for="test-date" style="margin-top:16px">Preferred Date</label>
+            <input type="date" id="test-date" name="date" required>
+
+            <label for="test-time" style="margin-top:16px">Time Slot</label>
+            <select id="test-time" name="time" required>
+                <option value="">Select a time slot</option>
+                <option value="09:00">09:00 AM</option>
+                <option value="10:00">10:00 AM</option>
+                <option value="11:00">11:00 AM</option>
+                <option value="14:00">02:00 PM</option>
+                <option value="15:00">03:00 PM</option>
+            </select>
+
+            <p class="form-note">
+                The centres and time slots above are sample data.
+                Availability must be verified by a connected booking system.
+            </p>
+
+            <button type="submit" class="btn btn-primary"
+                    style="width:100%;margin-top:25px">
+                Request Booking
+            </button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="section-container">
+            <p>DriveSlot — Academic Demonstration Project</p>
+        </div>
+    </footer>
+</body>
+</html>

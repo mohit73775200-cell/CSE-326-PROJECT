@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | DriveSlot</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🚘</span> DriveSlot
+            </a>
+            <a href="index.html" class="btn btn-secondary">Back to Home</a>
+        </nav>
+    </header>
+
+    <main class="status-section section-container">
+        <div class="section-heading">
+            <span class="section-tag">JOIN DRIVESLOT</span>
+            <h2>Create Your Account</h2>
+            <p>Register your details to start managing your driving test appointments.</p>
+        </div>
+
+        <form class="status-form" id="register-form">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname"
+                   placeholder="Enter your full name" required>
+
+            <label for="reg-email" style="margin-top:16px">Email Address</label>
+            <input type="email" id="reg-email" name="email"
+                   placeholder="Enter your email" required>
+
+            <label for="mobile" style="margin-top:16px">Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile"
+                   placeholder="Enter your mobile number"
+                   pattern="[0-9]{10}" required>
+
+            <label for="application" style="margin-top:16px">
+                Application Number
+            </label>
+            <input type="text" id="application" name="application"
+                   placeholder="Enter your application number" required>
+
+            <label for="vehicle" style="margin-top:16px">Vehicle Category</label>
+            <select id="vehicle" name="vehicle" required>
+                <option value="">Select vehicle category</option>
+                <option value="two-wheeler">Two-Wheeler</option>
+                <option value="lmv">Light Motor Vehicle (LMV)</option>
+                <option value="transport">Transport Vehicle</option>
+            </select>
+
+            <label for="reg-password" style="margin-top:16px">Password</label>
+            <input type="password" id="reg-password" name="password"
+                   minlength="8" placeholder="Create a password" required>
+
+            <button type="submit" class="btn btn-primary"
+                    style="width:100%;margin-top:25px">
+                Create Account
+            </button>
+
+            <p class="form-note">
+                Already registered? <a href="login.html">Login here</a>
+            </p>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="section-container">
+            <p>DriveSlot — Academic Demonstration Project</p>
+        </div>
+    </footer>
+</body>
+</html>
