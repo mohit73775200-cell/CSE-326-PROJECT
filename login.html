@@ -1,55 +1,250 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | DriveSlot</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+
+    <title>Login - Driving Test Slot Management System</title>
+
 </head>
+
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <a href="index.html" class="logo">
-                <span class="logo-icon">🚘</span> DriveSlot
-            </a>
-            <a href="index.html" class="btn btn-secondary">Back to Home</a>
-        </nav>
+
+    <!-- HEADER / NAVIGATION BAR -->
+
+    <header>
+
+        <table width="100%" cellpadding="10">
+
+            <tr>
+
+                <td width="30%">
+
+                    <h1>🚘 Driving Test</h1>
+                    <h2>Slot System</h2>
+
+                </td>
+
+                <td align="center">
+
+                    <nav>
+
+                        <a href="index.html">Home</a> &nbsp;&nbsp;
+
+                        <a href="index.html#about">About</a> &nbsp;&nbsp;
+
+                        <a href="index.html#faqs">FAQs</a> &nbsp;&nbsp;
+
+                        <a href="index.html#contact">Contact</a>
+
+                    </nav>
+
+                </td>
+
+                <td align="right">
+
+                    <a href="register.html">
+                        <button type="button">Register</button>
+                    </a>
+
+                </td>
+
+            </tr>
+
+        </table>
+
     </header>
 
-    <main class="status-section section-container">
-        <div class="section-heading">
-            <span class="section-tag">WELCOME BACK</span>
-            <h2>Login to DriveSlot</h2>
-            <p>Access your appointments and manage your driving test bookings.</p>
-        </div>
+    <hr>
 
-        <form class="status-form" id="login-form">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email"
-                   placeholder="Enter your email" required>
+    <!-- MAIN LOGIN SECTION -->
 
-            <label for="password" style="margin-top:20px">Password</label>
-            <input type="password" id="password" name="password"
-                   placeholder="Enter your password" required>
+    <main>
 
-            <button type="submit" class="btn btn-primary"
-                    style="width:100%;margin-top:25px">
-                Login
-            </button>
+        <table width="100%" cellpadding="25">
 
-            <p class="form-note">
-                Don't have an account?
-                <a href="register.html">Create an account</a>
-            </p>
-        </form>
+            <tr>
+
+                <!-- LEFT SIDE IMAGE AND MESSAGE -->
+
+                <td width="45%" align="center">
+
+                    <h1>Welcome Back!</h1>
+
+                    <h2>Drive Safe...</h2>
+
+                    <h2>Go Further...</h2>
+
+                    <p>
+                        Your journey towards a successful driving test
+                        starts here.
+                    </p>
+
+                    <br>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d"
+                        alt="Car at Driving Test Centre"
+                        width="100%"
+                    >
+
+                    <br>
+
+                    <h3>Drive with Confidence!</h3>
+
+                </td>
+
+                <!-- RIGHT SIDE LOGIN FORM -->
+
+                <td width="55%" align="center">
+
+                    <h1>🔐 Applicant Login</h1>
+
+                    <h3>Welcome to Driving Test Slot System</h3>
+
+                    <p>
+                        Login to manage your driving test appointments.
+                    </p>
+
+                    <hr>
+
+                    <form action="#" method="post">
+
+                        <!-- EMAIL -->
+
+                        <label for="email">
+                            <b>Email Address *</b>
+                        </label>
+
+                        <br><br>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your registered email"
+                            required
+                        >
+
+                        <br><br><br>
+
+                        <!-- PASSWORD -->
+
+                        <label for="password">
+                            <b>Password *</b>
+                        </label>
+
+                        <br><br>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                        <br><br>
+
+                        <!-- REMEMBER ME -->
+
+                        <input
+                            type="checkbox"
+                            id="remember"
+                            name="remember"
+                        >
+
+                        <label for="remember">
+                            Remember Me
+                        </label>
+
+                        <br><br>
+
+                        <!-- FORGOT PASSWORD -->
+
+                        <a href="#forgot-password">
+                            Forgot Password?
+                        </a>
+
+                        <br><br><br>
+
+                        <!-- LOGIN BUTTON -->
+
+                        <button type="submit">
+                            🔐 Login to Your Account
+                        </button>
+
+                        <br><br>
+
+                        <hr>
+
+                        <!-- REGISTRATION LINK -->
+
+                        <p>
+                            Don't have an account?
+                        </p>
+
+                        <a href="register.html">
+                            Create New Account
+                        </a>
+
+                        <br><br>
+
+                        <!-- HOMEPAGE LINK -->
+
+                        <a href="index.html">
+                            ← Back to Home
+                        </a>
+
+                    </form>
+
+                </td>
+
+            </tr>
+
+        </table>
+
     </main>
 
-    <footer class="footer">
-        <div class="section-container">
-            <p>DriveSlot — Academic Demonstration Project</p>
-        </div>
+    <hr>
+
+    <!-- FORGOT PASSWORD SECTION -->
+
+    <section id="forgot-password">
+
+        <h2>Forgot Your Password?</h2>
+
+        <p>
+            Please contact our support team for assistance
+            with your account.
+        </p>
+
+        <a href="index.html#contact">
+            Contact Support
+        </a>
+
+    </section>
+
+    <hr>
+
+    <!-- FOOTER -->
+
+    <footer align="center">
+
+        <h3>Driving Test Slot Management System</h3>
+
+        <p>Drive Safe... Go Further...</p>
+
+        <p>
+            © 2026 Driving Test Slot System.
+            All Rights Reserved.
+        </p>
+
     </footer>
+
 </body>
+
 </html>
