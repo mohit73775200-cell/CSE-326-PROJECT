@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Applicant Registration - Driving Test Slot System</title>
+
+</head>
+
+<body>
+
+    <!-- HEADER / NAVIGATION BAR -->
+
+    <header>
+
+        <table width="100%" cellpadding="10">
+
+            <tr>
+
+                <td width="30%">
+
+                    <h1>🚘 Driving Test</h1>
+                    <h2>Slot System</h2>
+
+                </td>
+
+                <td align="center">
+
+                    <nav>
+
+                        <a href="index.html">Home</a> &nbsp;&nbsp;
+
+                        <a href="index.html#about">About</a> &nbsp;&nbsp;
+
+                        <a href="index.html#faqs">FAQs</a> &nbsp;&nbsp;
+
+                        <a href="index.html#contact">Contact</a>
+
+                    </nav>
+
+                </td>
+
+                <td align="right">
+
+                    <a href="login.html">
+                        <button type="button">Login</button>
+                    </a>
+
+                </td>
+
+            </tr>
+
+        </table>
+
+    </header>
+
+    <hr>
+
+    <!-- MAIN REGISTRATION SECTION -->
+
+    <main>
+
+        <table width="100%" cellpadding="20">
+
+            <tr>
+
+                <!-- LEFT SIDE IMAGE -->
+
+                <td width="35%" align="center">
+
+                    <h1>Drive Safe...</h1>
+
+                    <h1>Go Further...</h1>
+
+                    <br>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d"
+                        alt="Driving Test Car"
+                        width="100%"
+                    >
+
+                </td>
+
+                <!-- RIGHT SIDE REGISTRATION FORM -->
+
+                <td width="65%">
+
+                    <h1>👤 Applicant Registration</h1>
+
+                    <p>
+                        Fill in your details to create an account
+                        and start booking your driving test slot.
+                    </p>
+
+                    <hr>
+
+                    <form action="#" method="post">
+
+                        <!-- FULL NAME -->
+
+                        <label for="fullname">
+                            <b>Full Name *</b>
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="text"
+                            id="fullname"
+                            name="fullname"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                        <br><br>
+
+                        <!-- EMAIL -->
+
+                        <label for="email">
+                            <b>Email Address *</b>
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email address"
+                            required
+                        >
+
+                        <br><br>
+
+                        <!-- MOBILE NUMBER -->
+
+                        <label for="mobile">
+                            <b>Mobile Number *</b>
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="tel"
+                            id="mobile"
+                            name="mobile"
+                            placeholder="Enter your mobile number"
+                            pattern="[0-9]{10}"
+                            required
+                        >
+
+                        <br><br>
+
+                        <!-- DATE OF BIRTH -->
+
+                        <label for="dob">
+                            <b>Date of Birth *</b>
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="date"
+                            id="dob"
+                            name="dob"
+                            required
+                        >
+
+                        <br><br>
+
+                        <!-- VEHICLE CATEGORY -->
+
+                        <label for="vehicle">
+                            <b>Vehicle Category *</b>
+                        </label>
+
+                        <br>
+
+                        <select id="vehicle" name="vehicle" required>
+
+                            <option value="">
+                                Select Vehicle Category
+                            </option>
+
+                            <option value="two-wheeler">
+                                Two Wheeler
+                            </option>
+
+                            <option value="four-wheeler">
+                                Four Wheeler
+                            </option>
+
+                            <option value="both">
+                                Both
+                            </option>
+
+                            <option value="commercial">
+                                Commercial Vehicle
+                            </option>
+
+                        </select>
+
+                        <br><br>
+
+                        <!-- ADDRESS -->
+
+                        <label for="address">
+                            <b>Residential Address *</b>
+                        </label>
+
+                        <br>
+
+                        <textarea
+                            id="address"
+                            name="address"
+                            rows="3"
+                            cols="40"
+                            placeholder="Enter your address"
+                            required
+                        ></textarea>
+
+                        <br><br>
+
+                        <!-- PASSWORD -->
+
+                        <label for="password">
+                            <b>Create Password *</b>
+                        </label>
+
+                        <br><br>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create your password"
+                            required
+                        >
+
+                        <br><br>
+
+                        <!-- CONFIRM PASSWORD -->
+
+                        <label for="confirm-password">
+                            <b>Confirm Password *</b>
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="password"
+                            id="confirm-password"
+                            name="confirm-password"
+                            placeholder="Confirm your password"
+                            required
+                        >
+
+                        <br><br>
+
+                        <!-- TERMS AND CONDITIONS -->
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            name="terms"
+                            required
+                        >
+
+                        <label for="terms">
+                            I agree to the terms and conditions.
+                        </label>
+
+                        <br><br>
+
+                        <!-- SUBMIT BUTTON -->
+
+                        <button type="submit">
+                            👤 Submit Registration
+                        </button>
+
+                        <br><br>
+
+                        <hr>
+
+                        <p>
+                            Already have an account?
+
+                            <a href="login.html">
+                                Login here
+                            </a>
+
+                        </p>
+
+                    </form>
+
+                </td>
+
+            </tr>
+
+        </table>
+
+    </main>
+
+    <hr>
+
+    <!-- FOOTER -->
+
+    <footer align="center">
+
+        <h3>Driving Test Slot Management System</h3>
+
+        <p>Drive Safe... Go Further...</p>
+
+        <p>
+            © 2026 Driving Test Slot System.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
