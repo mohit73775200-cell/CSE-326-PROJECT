@@ -1,10 +1,7 @@
-// script.js - Driving Test Slot Management System
-// this one file is used by all the pages (register, login, book slot,
-// reschedule and cancellation). data is saved in localStorage,
-// so it works without any server.
-
-// demo user is added automatically when the page runs first time
-// email: demo@gmail.com , password: demo123 , registration id: REG1001
+// Driving Test Slot Management System
+// this one file is used by all the pages data is saved in localStorage ,so it works without any server.
+// demo user added automatically when the page runs first.
+// email: demo@gmail.com , password: demo123 , registration id: REG1001 
 
 function getUsers() {
     var users = JSON.parse(localStorage.getItem("users")) || [];
@@ -53,7 +50,7 @@ function todayDate() {
 }
 
 
-// ----------------- register page -----------------
+//**** ----------------- register page ----------------- ****
 
 function registerUser(e) {
     e.preventDefault();
